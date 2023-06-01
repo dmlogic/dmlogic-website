@@ -1,1 +1,80 @@
-dmlogic.com
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Faster+One&family=Overlock:ital,wght@1,700&family=Ribeye&display=swap" rel="stylesheet">
+    <title>dmlogic.com</title>
+<style>
+    body {
+        font-size: 100%;
+        text-align: center;
+        font-family: cursive;
+        color:dimgray
+    }
+    .wrap {
+        width:100%;
+        margin:0 auto;
+        max-width: 1000px;
+    }
+    .domain-name {
+        font-family: 'Ribeye', cursive;
+        color: deeppink;
+        font-size: 6rem;
+        display: inline-block;
+        padding: 0 .5rem;
+    }
+    .for-sale {
+        font-family: 'Overlock', cursive;
+        text-transform: uppercase;
+        color: red;
+        font-size: 4rem;
+        display: inline-block;
+        padding: 0 .5rem;
+        transition: 0.1s;
+    }
+    .lucky {
+        display: block;
+        font-family: 'Boogaloo', cursive;
+        font-size: 3rem;
+        color:darkred;
+    }
+    .so-lucky {
+        display: block;
+        font-family: 'Faster One', cursive;
+        font-size: 3rem;
+        color:forestgreen;
+    }
+    .cta {
+        font-size: 2rem;
+        font-family: 'Boogaloo', cursive;
+    }
+    a {
+        color: dodgerblue;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>
+            <span class="domain-name">dmlogic.com</span> is <span class="for-sale">for sale</span>
+        </h1>
+        <p>
+            <span class="lucky">YOU could own this domain </span>
+            <span class="so-lucky">you lucky, lucky person!</span>
+        </p>
+        <p class="cta">
+            Make <a href="https://www.linkedin.com/in/darrenm/">me</a> an offer at <a href="mailto:forsale@dmlogic.com?subject=Domain+name+offer">forsale@dmlogic.com</a>
+        </p>
+    </div>
+    <script>
+        var blink = document.querySelector('.for-sale');
+        setInterval(function() {
+          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 500);
+      </script>
+</body>
+</html>
